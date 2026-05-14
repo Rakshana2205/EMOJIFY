@@ -77,7 +77,7 @@ A fast-paced emoji clicking game built with React. Click as fast as you can in 1
 
 ## 🎮 Live Demo
 
-[Play the game here](#)
+[Play the game here](https://emojify-z88j.vercel.app)
 
 ## ✨ Features
 
