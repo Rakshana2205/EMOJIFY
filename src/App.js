@@ -307,7 +307,7 @@ function App() {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [gameState, timeLeft]);
+  }, [gameState, timeLeft, playGameEnd]);
 
   useEffect(() => {
     if (gameState === "playing") {
