@@ -307,7 +307,7 @@ function App() {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, [gameState, playGameEnd]);
+  }, [gameState, timeLeft]);
 
   useEffect(() => {
     if (gameState === "playing") {
@@ -406,7 +406,7 @@ function App() {
         return n;
       });
     },
-    [gameState],
+    [gameState, playClick, playCombo],
   );
 
   // ✅ RETURN LAST
@@ -422,7 +422,7 @@ function App() {
       />
       <ThemeSwitcher theme={theme} onThemeChange={setTheme} />
 
-      <div className={`app-container ${shaking ? 'shake' : ''}`}>
+      <div className={`app-container ${shaking ? "shake" : ""}`}>
         <div className="title-card">
           <h1>EMOJIFY⚡</h1>
           <p>How fast can you click in 10 seconds?</p>
